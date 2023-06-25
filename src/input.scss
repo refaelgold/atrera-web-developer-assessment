@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*Global default text and background Colour's scheme - pretty way to do it.*/
+@layer base {
+  body{
+    @apply bg-smoky-white;
+  }
+  h1 {
+    @apply text-smoky-black;
+  }
+  h2 {
+    @apply text-smoky-black;
+  }
+  p{
+    @apply text-smoky-black;
+  }
+  li{
+    @apply text-smoky-black;
+  }
+}
