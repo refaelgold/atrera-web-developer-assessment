@@ -8,7 +8,7 @@
     @apply bg-smoky-white;
   }
   h1 {
-    @apply text-smoky-black text-5xl font-extrabold leading-10;
+    @apply text-smoky-black lg:text-5xl xs:text-4xl font-extrabold leading-10;
   }
   h2 {
     @apply text-smoky-black text-lg;

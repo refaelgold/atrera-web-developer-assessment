@@ -6,6 +6,9 @@ module.exports = {
       roboto: ['Roboto'],
     },
     extend: {
+      screens: {
+        'xs': '375px',
+      },
         colors: {
           'atera-pink': '#FF176B',
           'atera-pink-dark': '#9c0138',
