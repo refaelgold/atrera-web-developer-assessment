@@ -14,6 +14,9 @@ module.exports = {
           'atera-dark-gray': '#898989',
           'atera-light-gray': '#a9a9a9'
         },
+      fontSize: {
+        xxs: '0.625rem',
+      },
     },
   },
   plugins: [],
