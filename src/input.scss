@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/*Global default text and background Colour's scheme - pretty way to do it.*/
+/*Global default CSS scheme - pretty way to do it.*/
 @layer base {
   body{
     @apply bg-smoky-white;
   }
   h1 {
-    @apply text-smoky-black;
+    @apply text-smoky-black text-6xl font-extrabold;
   }
   h2 {
     @apply text-smoky-black;
