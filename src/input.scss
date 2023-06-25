@@ -11,12 +11,12 @@
     @apply text-smoky-black text-5xl font-extrabold leading-10;
   }
   h2 {
-    @apply text-smoky-black;
+    @apply text-smoky-black text-lg;
   }
   p{
     @apply text-smoky-black;
   }
   li{
-    @apply text-smoky-black;
+    @apply text-smoky-black text-lg;
   }
 }
