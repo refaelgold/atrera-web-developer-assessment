@@ -8,6 +8,7 @@ module.exports = {
     extend: {
         colors: {
           'atera-pink': '#FF176B',
+          'atera-pink-dark': '#9c0138',
           'gold': '#D1AD78',
           'smoky-black': '#1A1A1A',
           'smoky-white': '#EDEDED',
