@@ -45,14 +45,15 @@
   position: relative;
 }
 
-.slider-container .fade {
-  animation-name: fade;
-  animation-duration: 0.5s;
+
+.slider-container .slide-out {
+  animation-name: slide-out;
+  animation-duration: 1s;
 }
 
-@keyframes fade {
-  from {opacity: 0.4}
-  to {opacity: 1}
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(100%); }
 }
 
 .slider-container .slides .slider-numbers {

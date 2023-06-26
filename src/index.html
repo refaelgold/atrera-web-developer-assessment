@@ -6,6 +6,7 @@
         <link href="css/output.css" rel="stylesheet">
         <title>Atera Web Developer Assessment</title>
         <script src="js/typewriter.js"></script>
+        <script src="js/slider.js"></script>
     </head>
     <body class="font-roboto">
         <section class="flex md:flex-row xs:flex-col md:mx-14 md:my-20 xs:mx-3 xs:my-10">
@@ -29,22 +30,22 @@
             <section class="md:basis-1/2 xs:basis-full">
                 <!-- ######### Slider ######### -->
                 <div class="slider-container">
-                    <div class="slides fade">
+                    <div class="slides slide-out">
                         <div class="slider-image">
-                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 1">
-                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 1">
+                            <img class="lg:block  md:hidden xs:hidden" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 1">
+                            <img class="lg:hidden md:block sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 1">
                         </div>
                     </div> <!-- slider -->
-                    <div class="slides fade">
+                    <div class="slides slide-out">
                         <div class="slider-image">
-                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 2">
-                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 2">
+                            <img class="lg:block  md:hidden xs:hidden" src="assets/dashboards/x2%20images/dashboard-2-x2.png" alt="Amazing Atera dashboard slide 2">
+                            <img class="lg:hidden md:block" src="assets/dashboards/dashboard-2.png" alt="Amazing Atera dashboard slide 2">
                         </div>
                     </div> <!-- slider -->
-                    <div class="slides fade">
+                    <div class="slides slide-out">
                         <div class="slider-image">
-                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 3">
-                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 3">
+                            <img class="lg:block  md:hidden xs:hidden" src="assets/dashboards/x2%20images/dashboard-3-x2.png" alt="Amazing Atera dashboard slide 3">
+                            <img class="lg:hidden md:block"  src="assets/dashboards/dashboard-3.png" alt="Amazing Atera dashboard slide 3">
                         </div>
                     </div> <!-- slider -->
                     <!-- Slider Selection Bullets -->
@@ -82,59 +83,7 @@
             </section>
         </section>
         <script>
-            let slideIndex = 1;
 
-            function showImage(n) {
-                // or Display the first Image
-                'use strict';
-                var slide = document.getElementsByClassName('slides'),
-                    dots = document.getElementsByClassName('dots'),
-                    i;
-                if (n > slide.length) { // to prevent larger values than the slide length
-                    slideIndex = 1;
-                }
-
-                if (n < 1) { // to avoide negative values
-                    slideIndex = slide.length;
-                }
-
-                for (i = 0; i < slide.length; i++) { // to make other images dispaly: none
-                    slide[i].style.display = 'none';
-                }
-                slide[slideIndex - 1].style.display = 'block';
-
-                for (i = 0; i < dots.length; i++) { // to remove the active class from other dots
-                    dots[i].className = dots[i].className.replace(' active', '');
-                }
-                dots[slideIndex - 1].className += ' active';
-            }
-
-            showImage(slideIndex);
-
-            function plusIndex(n) { // for Next & Prev Actions
-                'use strict';
-                showImage(slideIndex += n);
-            }
-
-            function currentSlide(n) { // for Slide Bullets Selection
-                'use strict';
-                showImage(slideIndex = n);
-            }
-
-            // slider looping
-            let a = 2;
-            setInterval( timer, 3000 );
-
-            function timer() {
-                console.log( a );
-                currentSlide(a)
-                if ( a === 3 ) {
-                    currentSlide(a)
-                    a=1;
-                    return;
-                }
-                a += 1;
-            }
         </script>
     </body>
 </html>
