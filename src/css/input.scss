@@ -75,11 +75,12 @@
       height: 12px;
       background-color: #808080;
       border-radius: 50%;
-    }&:hover{
-           cursor: pointer;
-           background-color: #D1AD78;
-     }
+    }
     .active {
+      background-color: #D1AD78;
+    }
+    dots:hover{
+      cursor: pointer;
       background-color: #D1AD78;
     }
   }
