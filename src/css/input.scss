@@ -23,3 +23,16 @@
     @apply bg-atera-pink hover:bg-atera-pink-dark text-white rounded cursor-pointer
   }
 }
+
+/* START:pure css for typewriter cursor*/
+#typewriter::after {
+  content: '|';
+  margin-left: 5px;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+/* END:pure css for typewriter cursor*/

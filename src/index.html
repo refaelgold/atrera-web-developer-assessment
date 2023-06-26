@@ -10,7 +10,7 @@
         <section class="flex md:flex-row xs:flex-col md:mx-14 md:my-20 xs:mx-3 xs:my-10">
             <section class="md:basis-1/2 md:text-left sm:text-center xs:text-left xs:basis-full">
                 <img src="assets/atera-logo.svg" class="xs:mb-10 xs:m-auto md:mx-0" alt="Atera Logo">
-                <h1>Join the new era <br/>of I.T. with Atera</h1>
+                <h1 id="typewriter">Join the new era of I.T. with Atera</h1>
                 <h2 class="my-3.5">With our all-in-one I.T. platform, you get:</h2>
                 <ul class="list-outside list-disc marker:text-gold sm:flex sm:flex-wrap md:justify-normal sm:justify-center">
                     <li class="lg:mr-8 sm:mr-5 sm:ml-3 xs:ml-5">Monitor unlimited devices</li>
@@ -53,5 +53,19 @@
                 </ul>
             </section>
         </section>
+        <script>
+            'use strict';
+
+            function typeWriter(el) {
+                const textArray = el.innerHTML.split('');
+                el.innerHTML = '';
+                textArray.forEach((letter, i) =>
+                    setTimeout(() => (el.innerHTML += letter), 95 * i)
+                );
+            }
+
+            typeWriter(typewriter);
+
+        </script>
     </body>
 </html>
