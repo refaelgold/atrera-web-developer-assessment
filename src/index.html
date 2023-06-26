@@ -28,42 +28,31 @@
             </section>
             <section class="md:basis-1/2 xs:basis-full">
                 <!-- ######### Slider ######### -->
-
                 <div class="slider-container">
-
                     <div class="slides fade">
-                        <div class="slider-numbers">1/4</div>
-                        <div class="slider-image"><img src="https://image.ibb.co/kpmt3k/background_1.jpg" alt="background_1"></div>
-                        <div class="slider-caption">Caption 1</div>
+                        <div class="slider-image">
+                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 1">
+                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 1">
+                        </div>
                     </div> <!-- slider -->
-
                     <div class="slides fade">
-                        <div class="slider-numbers">2/4</div>
-                        <div class="slider-image"><img src="https://image.ibb.co/mGxNw5/background_2.jpg" alt="background_2"></div>
-                        <div class="slider-caption">Caption 2</div>
+                        <div class="slider-image">
+                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 2">
+                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 2">
+                        </div>
                     </div> <!-- slider -->
-
                     <div class="slides fade">
-                        <div class="slider-numbers">3/4</div>
-                        <div class="slider-image"><img src="https://image.ibb.co/gd5gpQ/background_3.jpg" alt="background_3"></div>
-                        <div class="slider-caption">Caption 3</div>
+                        <div class="slider-image">
+                            <img class="xs:hidden sm:block" src="assets/dashboards/x2%20images/dashboard-1-x2.png" alt="Amazing Atera dashboard slide 3">
+                            <img class="md:hidden sm:block" src="assets/dashboards/dashboard-1.png" alt="Amazing Atera dashboard slide 3">
+                        </div>
                     </div> <!-- slider -->
-
-                    <div class="slides fade">
-                        <div class="slider-numbers">4/4</div>
-                        <div class="slider-image"><img src="https://image.ibb.co/jOgXw5/background_4.jpg" alt="background_4"></div>
-                        <div class="slider-caption">Caption 4</div>
-                    </div> <!-- slider -->
-
-
                     <!-- Slider Selection Bullets -->
                     <div class="slider-bullets" id="slider-bullets">
                         <span class="dots" onclick="currentSlide(1)"></span>
                         <span class="dots" onclick="currentSlide(2)"></span>
                         <span class="dots" onclick="currentSlide(3)"></span>
-                        <span class="dots" onclick="currentSlide(4)"></span>
                     </div> <!-- Slider Bullets -->
-
                 </div> <!-- slider container -->
                 <ul class="xs:flex xs:items-center sm:justify-center xs:place-content-center xs:mt-5">
                     <li class="xs:inline-block">
@@ -134,12 +123,12 @@
 
             // slider looping
             let a = 2;
-            let i = setInterval( timer, 3000 );
+            setInterval( timer, 3000 );
 
             function timer() {
                 console.log( a );
                 currentSlide(a)
-                if ( a === 4 ) {
+                if ( a === 3 ) {
                     currentSlide(a)
                     a=1;
                     return;
