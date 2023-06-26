@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/output.css" rel="stylesheet">
         <title>Atera Web Developer Assessment</title>
+        <script src="js/typewriter.js"></script>
     </head>
     <body class="font-roboto">
         <section class="flex md:flex-row xs:flex-col md:mx-14 md:my-20 xs:mx-3 xs:my-10">
@@ -53,19 +54,5 @@
                 </ul>
             </section>
         </section>
-        <script>
-            'use strict';
-
-            function typeWriter(el) {
-                const textArray = el.innerHTML.split('');
-                el.innerHTML = '';
-                textArray.forEach((letter, i) =>
-                    setTimeout(() => (el.innerHTML += letter), 95 * i)
-                );
-            }
-
-            typeWriter(typewriter);
-
-        </script>
     </body>
 </html>
